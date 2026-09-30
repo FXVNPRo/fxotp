@@ -27,6 +27,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r tools/validator/requirements.txt
 
-      - name: Validate XAUUSD example
+            - name: Validate all FXOTP examples
+        shell: bash
         run: |
-          python tools/validator/validate.py examples/metals/xauusd-buy.json
+          set -e
+
+          echo "Searching for FXOTP example messages..."
+
+          count=0
+
+          while IFS= read -r -d '' file; do
+            echo ""
+            echo "Validating: $file"
+            python tools/validator/validate.py "$file"
+            count=$((count + 1))
+          done < <(find examples -type f -name "*.json" -print0)
+
+          echo ""
+          echo "Validated $count FXOTP example(s)."
+
+          if [ "$count" -eq 0 ]; then
+            echo "ERROR: No FXOTP examples found."
+            exit 1
+          fi
