@@ -27,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r tools/validator/requirements.txt
 
-            - name: Validate all FXOTP examples
+      - name: Validate all FXOTP examples
         shell: bash
         run: |
           set -e
