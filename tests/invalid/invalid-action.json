@@ -1,0 +1,18 @@
+{
+  "protocol": "FXOTP",
+  "version": "0.1",
+  "id": "FXOTP-TEST-INVALID-ACTION",
+  "created_at": "2026-09-30T10:30:00Z",
+
+  "instrument": {
+    "symbol": "XAUUSD",
+    "asset_class": "metal"
+  },
+
+  "action": "FLY",
+
+  "entry": {
+    "type": "market",
+    "price": 3825.00
+  }
+}
