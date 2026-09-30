@@ -27,7 +27,7 @@ Status: In Progress
 Remaining:
 
 - [ ] Additional example messages
-- [ ] Initial test suite
+- [x] Initial test suite
 - [ ] Error code specification
 - [x] Protocol governance
 
