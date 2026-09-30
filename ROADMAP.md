@@ -28,7 +28,7 @@ Remaining:
 
 - [ ] Additional example messages
 - [x] Initial test suite
-- [ ] Error code specification
+- [x] Error code specification
 - [x] Protocol governance
 
 ---
