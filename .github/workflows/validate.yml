@@ -45,6 +45,9 @@ jobs:
 
           echo ""
           echo "Validated $count FXOTP example(s)."
+                - name: Run FXOTP test suite
+        run: |
+          python tools/validator/run_tests.py
 
           if [ "$count" -eq 0 ]; then
             echo "ERROR: No FXOTP examples found."
