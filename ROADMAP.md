@@ -29,7 +29,7 @@ Remaining:
 - [ ] Additional example messages
 - [ ] Initial test suite
 - [ ] Error code specification
-- [ ] Protocol governance
+- [x] Protocol governance
 
 ---
 
