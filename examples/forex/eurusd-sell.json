@@ -1,0 +1,41 @@
+{
+  "protocol": "FXOTP",
+  "version": "0.1",
+  "id": "FXOTP-EXAMPLE-EURUSD-001",
+  "created_at": "2026-09-30T10:00:00Z",
+
+  "instrument": {
+    "symbol": "EURUSD",
+    "asset_class": "forex"
+  },
+
+  "action": "SELL",
+
+  "entry": {
+    "type": "market",
+    "price": 1.17500
+  },
+
+  "stop_loss": {
+    "price": 1.18000
+  },
+
+  "take_profit": [
+    {
+      "price": 1.17000
+    },
+    {
+      "price": 1.16500
+    }
+  ],
+
+  "risk": {
+    "type": "percent",
+    "value": 1.0
+  },
+
+  "metadata": {
+    "source": "FXOTP example",
+    "comment": "Example EURUSD market sell instruction"
+  }
+}
