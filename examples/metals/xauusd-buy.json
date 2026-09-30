@@ -1,0 +1,41 @@
+{
+  "protocol": "FXOTP",
+  "version": "0.1",
+  "id": "FXOTP-EXAMPLE-XAUUSD-001",
+  "created_at": "2026-09-30T09:00:00Z",
+
+  "instrument": {
+    "symbol": "XAUUSD",
+    "asset_class": "metal"
+  },
+
+  "action": "BUY",
+
+  "entry": {
+    "type": "market",
+    "price": 3825.00
+  },
+
+  "stop_loss": {
+    "price": 3815.00
+  },
+
+  "take_profit": [
+    {
+      "price": 3840.00
+    },
+    {
+      "price": 3850.00
+    }
+  ],
+
+  "risk": {
+    "type": "percent",
+    "value": 1.0
+  },
+
+  "metadata": {
+    "source": "FXOTP example",
+    "comment": "Example XAUUSD market buy instruction"
+  }
+}
